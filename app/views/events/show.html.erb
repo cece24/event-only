@@ -1,1 +1,5 @@
-events#show page
+<h1><%= @event.name %></h1>
+
+<%= link_to "Show all events", events_path %>
+
+<%= render 'one_event', event: @event %>
