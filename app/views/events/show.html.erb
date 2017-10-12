@@ -1,5 +1,7 @@
+<%= link_to "Show all events", events_path %>
+
 <h1><%= @event.name %></h1>
 
-<%= link_to "Show all events", events_path %>
+<%= link_to "Edit Event", edit_event_path(@event) %>
 
 <%= render 'one_event', event: @event %>
