@@ -1,5 +1,7 @@
 <h1>All Events</h1>
 
+<%= link_to 'New Event', new_event_path %>
+
 <% @events.each do |event| %>
   <%= render 'one_event', event: event %>
 <% end %>
